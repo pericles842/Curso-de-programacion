@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(36, 36, 36);
+}
+
+body {
+
+    background-image: url('./img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* caja padre del formulario*/
+.main {
+    position: absolute;
+    border-radius: 8px;
+    width: 23%;
+    margin: 8% 40%;
+    background-color: rgb(70, 150, 255);
+
+    transition: 0.5s;
+}
+.main >img{
+    width: 10%;
+}
+
+.header {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+
+    padding: 20px 0;
+}
+
+.you-btn {
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+}
+
+.you-btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.main:hover {
+    margin: 7% 40%;
+    transition: 1s;
+}
+label{
+    font-size: 15px;
+}
