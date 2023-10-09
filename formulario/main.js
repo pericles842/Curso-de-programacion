@@ -15,8 +15,11 @@ function getInput(id) {
  *
  */
 function createAccount() {
+  //iteramos el arreglo  
   inputs.forEach(name => {
+    //la fabrica genera el input
     let input = getInput(name);
+    //lo guardamos
     localStorage.setItem(input.id.trim(), input.value.trim())
   });
   alert('Cuenta creada, exitosamente')
@@ -26,15 +29,19 @@ function createAccount() {
  *
  */
 function verifyAccount(event) {
-
+  //evitamos que recargue la pagina 
   event.preventDefault();
 
-  password = getInput('password').value
-  email = getInput('email').value
+  //usamos la fabrica para generar los inputs
+  var password = getInput('password').value
+  var email = getInput('email').value
 
+  //comparamos si las credenciales coinciden 
+  //si contraseña y email son iguales a los del localstorage entonces vete a home.html
   if (password.trim() === localStorage.password && email.trim() === localStorage.email) {
     window.location.href = "./home.html";
   } else {
+    //limpia el formulario
     password = ''
     email = ''
     alert('El correo o la contraseña no coinciden, verificar')
