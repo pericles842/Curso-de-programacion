@@ -1,3 +1,4 @@
+/*Configuración general*/
 * {
     margin: 0;
     padding: 0;
@@ -22,21 +23,24 @@ body {
 
     transition: 0.5s;
 }
-.main >img{
+
+.main>img {
     width: 10%;
 }
 
+/* cabecera foto*/
 .header {
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 
     padding: 20px 0;
 }
 
+/* Efecto del  botón para el formulario*/
 .you-btn {
     background-color: rgb(36, 36, 36);
     color: rgb(255, 255, 255);
@@ -50,6 +54,7 @@ body {
     margin: 7% 40%;
     transition: 1s;
 }
-label{
+
+label {
     font-size: 15px;
 }
