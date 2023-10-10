@@ -22,7 +22,19 @@ function createAccount() {
     //lo guardamos
     localStorage.setItem(input.id.trim(), input.value.trim())
   });
-  alert('Cuenta creada, exitosamente')
+
+}
+
+/**
+ *Al crear la cuenta se ejecuta el alert
+ *
+ */
+function alertText() {
+  Swal.fire(
+    'Coffee code dice',
+    'Cuenta creada, exitosamente',
+    'success'
+  )
 }
 /**
  *Valida el formulario 
@@ -44,7 +56,12 @@ function verifyAccount(event) {
     //limpia el formulario
     password = ''
     email = ''
-    alert('El correo o la contraseña no coinciden, verificar')
+
+    Swal.fire(
+      'Coffee code dice',
+      'El correo o la contraseña no coinciden, verificar',
+      'error'
+    )
   }
 }
 

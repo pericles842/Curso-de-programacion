@@ -37,7 +37,7 @@ var patilla = 'patilla'
 var frutas = ['manzana', 'pera', 'fresa', 'patilla'];
 //ahora literalmente frutas contiene ... frutas
 // dentro de lo [] va a ir los elementos que quieras guardar estos pueden ser numeros o palabras, separados con coma
-
+    
 var numeros = [123, 2, variable1, miEdad]; //fijate el uso de nuestras variables 
 
 //puedes tener arreglos dentro de arreglos por ejemplo...

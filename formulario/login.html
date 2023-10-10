@@ -12,10 +12,19 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Estilos css -->
   <link rel="stylesheet" href="index.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- al cargar este archivo se ejecutara este scrip -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      setValuesInHome()
+    });
+  </script>
 </head>
 
 <body>
-  <form method="post"  onsubmit="verifyAccount(event)" >
+  <form method="post" onsubmit="verifyAccount(event)">
     <div class="main shadow-lg">
       <div class="header">
         <img src="./img/logo-banner.png" alt="banner">
@@ -33,7 +42,7 @@
       </div>
       <div class="footer p-4">
         <div class="d-grid gap-2">
-          <button class="btn you-btn"  type="submit">Enviar</button>
+          <button class="btn you-btn" type="submit">Enviar</button>
         </div>
 
         <div class="text-center mt-4">
