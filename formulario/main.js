@@ -71,5 +71,6 @@ function verifyAccount(event) {
  */
 function setValuesInHome() {
   var user = document.getElementById("username");
+  console.log(user )
   user.innerHTML = ` Hola ${localStorage.name} ${localStorage.last_name}`;
 }
